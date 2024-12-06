@@ -5,4 +5,7 @@
 // @match        *://*.reddit.com/*
 // ==/UserScript==
 if (window.location.pathname === '/redirect') return;
+
+if (window.self !== window.top) return; // iframe
+if (window.location.pathname === '/redirect') return; // Opening link in browser from app
 window.location.href = `apollo://${window.location.hostname}${window.location.pathname}`
