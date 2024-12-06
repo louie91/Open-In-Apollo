@@ -5,7 +5,6 @@
 // @match        *://*.reddit.com/*
 // @inject-into content
 // ==/UserScript==
-if (window.location.pathname === '/redirect') return;
 
 if (window.self !== window.top) return; // iframe
 if (window.location.pathname === '/redirect') return; // Opening link in browser from app
