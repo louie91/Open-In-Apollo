@@ -5,4 +5,4 @@
 // @match        *://*.reddit.com/*
 // ==/UserScript==
 if (window.location.pathname === '/redirect') return;
-window.location.href = `apollo2://${window.location.hostname}${window.location.pathname}`
+window.location.href = `apollo://${window.location.hostname}${window.location.pathname}`
