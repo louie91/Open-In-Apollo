@@ -3,6 +3,7 @@
 // @version      1.0.1
 // @author       AnthonyGress
 // @match        *://*.reddit.com/*
+// @inject-into content
 // ==/UserScript==
 if (window.location.pathname === '/redirect') return;
 
